@@ -1,0 +1,553 @@
+@import "variables";
+@import "generic";
+
+// Styles Header 
+
+header {    
+    nav {
+        position: fixed;
+        z-index: 5;
+        background: $color-secondary;
+        height: 70px;
+        border-bottom: .1px solid #ffffff;
+        line-height: 70px;
+        .brand-logo img {
+            width: 170px;
+        }
+    }
+}
+// Styles Banner
+#banner {
+    padding-top: 100px;
+    .row {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    background: $color-secondary;
+    padding-bottom: 0;
+    .title {
+        h1, h2 {
+            color: $color-text-white;
+        }
+        &__subtext {
+            font-size: 2.1rem;
+        }
+    }
+    .datos {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        background: $bg-white;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        &__title {
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+        .calltoaction {
+            padding: 0;
+            a {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+    .image-container {
+        padding-top: 1rem;
+    }
+}
+#programa {
+    background: $bg-gray;
+    padding-top: calc(70px + 1rem);
+    .checks {
+        margin-top: 45px;
+        ul li i {
+            color: $color-secondary;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+    #promocion {
+        background: url('./../images/bg-promo.png') no-repeat;
+        background-size: contain;
+        padding: 6% 0;
+        margin-bottom: 3rem;
+        h4,h2, p, span, a{
+            color: $color-text-white;
+        }
+        a {
+            text-decoration: underline;
+        }
+        
+    }
+}
+#comoFunciona {
+    padding-top: calc(70px + 1rem);
+    .item {
+        margin-top: 5rem;
+        &__text {
+            strong {
+                font-size: 15px;
+            }
+        }
+    }
+}
+#score {
+    padding-top: calc(70px + 1rem);
+    background: #ff5050;
+    .title {
+        h2, h3 {
+            color: $color-text-white;
+        }
+    }
+    .user {
+        background: $bg-white;
+        margin-bottom: 1rem;
+        padding: 1rem 0;
+        h3 {
+            margin: 0;
+        }
+        h2 {
+            color: $color-third;
+        }
+    }
+}
+#consultas {
+    padding-top: calc(70px + 1rem);
+    .contact {
+        background-color: $bg-gray-ligth;
+        margin-top: 1.5rem;
+        padding: 2rem 1.3rem;
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        &__email {
+            color: $color-third;
+        }
+
+    }
+}
+#rules {
+    .title {
+        margin-top: 70px;
+        &__principal {
+            margin-bottom: 41px;
+        }
+    }
+    .collapsible {
+        border: none;
+        box-shadow: none;
+        &-header {
+            font-weight: 600;
+            &.active i{
+                transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+            }
+        }
+        
+    }
+    .collapsible-body li {
+        margin-left: 34px;
+        list-style-type: disc;
+        color:#ea212d;
+        text-align: justify;
+        margin-bottom: 10px;
+        li {
+            list-style-type: circle;
+            color: #4c4c4c;
+            margin-bottom: 0;
+        }
+        span {
+            color: #4c4c4c;
+        }
+    }
+}
+#referenciador {
+    padding-top: 80px;
+    .link {
+        padding: 0;
+        margin-bottom: 16px;
+        &-back {
+          span {
+            position: relative;
+            bottom: 2px;
+            font-size: .9rem;
+            text-decoration: underline;
+            margin-left: 5px;
+          }
+        }
+    }
+    .user {
+        position: relative;
+        margin-bottom: 10px;
+        &__face {
+            width: 59px;
+            height: 59px;
+            color: #c32f2f;
+            background: #ff5050;
+            font-size: 30px;
+            font-weight: 900;
+            border-radius: 4px;
+            padding-top: 7px;
+        }
+        &__employe{
+            top:12px;
+            font-weight: 300;
+            font-size: 15px;
+        }
+        &__name{
+            top: 34px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        h5 {
+            position: absolute;
+            left: 70px;            
+            margin: 0;
+        }
+       
+    }
+    .form {
+        &-container{
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 22px 0 rgba(221, 221, 221, 0.5);
+            padding: 20px 20px;
+
+        }
+        &-title {
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 7px;
+            i {
+                display: inline-block;
+            }
+        }
+        &-checkbox {
+            p {
+                margin-bottom: 7px;
+            }
+            .error {
+                bottom: -8px;
+            }
+        }        
+    }
+    .referidos {
+        padding-left: 20px;
+        .list {
+            &__title {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 0;
+            }
+            &__subtext {
+                font-size: 12px;
+                color: #848484;
+                margin-top: 6px;
+            }
+            &__full {
+                ul,li{
+                    padding: 0;
+                }
+                .title-container li {
+                    color: #ababab;
+                    font-size: 12px;
+                    font-weight: 900;
+                }
+                .referidos-container {                    
+                    padding: 9px 0;
+                    // border-bottom: .5px solid #dbd8d8;
+                    li {
+                        font-size: 13px;
+                        overflow: hidden;
+                        text-overflow: ellipsis; 
+                    }
+                    &:nth-child(even) {
+                        background: #ffffff;
+                    }
+                    &:nth-child(odd) {
+                        background: #f8f8f8;
+                    }
+                }
+            }
+            &__empty {
+                padding-top: 80px;
+                h2,p {
+                    color: #e4e4e4;
+                }
+            }
+        }
+        
+    }
+    .referenciado {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(118, 118, 118, 0.5);
+        padding: 0 10%;
+        padding-bottom: 2rem;
+        position: relative;
+        .btn_close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color:$color-text;
+            cursor: pointer;
+        }
+        &__title h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .accurance {
+        position: relative;
+        padding: 0;
+        .row {
+            margin-bottom: 0;
+        }
+        &__item {
+            margin-top: 12px;
+        }
+        &__type {
+            position: relative;
+            min-height: 49px;
+            label {
+              font-size: 12px;
+              width: 100%;
+              min-height: 49px;
+              border: solid 1px #c6c6c6;
+              border-radius: 3px;
+              position: absolute;
+              top: -13px;
+              left: 0;
+              padding: 11px 0 0 56px;
+              &::before {
+                display: none;
+              }
+            }
+            .lbl-vehicular {
+                padding-left: 71px;
+            }
+        }
+        span[class^=icon] {
+            font-size: 1.4rem;
+            padding-left: 14px;
+        }
+        label:hover {
+            border: 1px solid $color-third;
+            color: $color-third;
+            & ~ span:before{
+              color: $color-third;
+            }
+        }
+        [type="checkbox"]:checked + label {
+            border: 1px solid $color-third;
+        }
+        [type="checkbox"]:checked + label, [type="checkbox"]:checked ~ span::before {
+            color: $color-third;
+        }
+        [type="checkbox"]:checked + label:after, [type="checkbox"].with-gap:checked + label:after {
+            background: none;
+            border: none;
+        }
+        [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:not(:checked) + label:after {
+            border: none;
+        }
+        .error {
+            bottom: -4px;
+        }
+    }
+    .calltoaction {
+        margin-top: 17px;
+        .btn-large {
+            width: 100%;
+        }
+        hr {
+            margin-bottom: 12px;
+        }
+    }
+    .preloader {
+        left: 0;
+    }
+    
+}
+@media screen and (min-width:992px) and (max-width:1330px){
+    #referenciador {
+        .accurance {
+            &__type {
+                text-align: center;
+                .lbl-vehicular {
+                    padding-left: 0;
+                }
+                span {
+                    padding: 0;
+                }
+                label {
+                    padding: 2rem 0 1.9rem 0;
+                }            
+            }
+            span[class^=icon] {
+                padding-left: 0;
+            }
+            .error {
+                bottom: -17px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 993px){
+    .bg-red ,#referenciador {
+        .container {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    header {    
+        nav {
+            height: 60px;
+            line-height: 56px;
+            .brand-logo img {
+                width: 114px;
+            }
+        }
+    }
+    #programa, #comoFunciona, #score, #consultas {
+        padding-top: 5vh;
+    }
+    #banner {
+        padding-top: 56px;
+        .datos {
+            .calltoaction {
+                padding: 0 .75rem;
+            }
+        }
+    }
+    #comoFunciona .item {
+        margin-top: 3rem;
+    }
+    #consultas {
+        .contact {
+            padding: 1rem;
+            h3 {
+                font-size: 1rem;
+            }    
+        }
+    }
+    #referenciador {
+        .title {
+            margin-bottom: 2rem;
+        }
+        .accurance {
+            &__type {
+                text-align: center;
+                .lbl-vehicular {
+                    padding-left: 0;
+                }
+                span {
+                    padding: 0;
+                }
+                label {
+                    padding: 2rem 0 1.9rem 0;
+                }            
+            }
+            span[class^=icon] {
+                padding-left: 0;
+            }
+            .error {
+                bottom: -14px;
+            }
+        }
+    }
+}
+@media screen and (max-width:425px){
+    #banner {
+        .title {
+            &__principal {
+                font-size: 30px;
+            }
+        }
+    }
+    #comoFunciona {
+        .item {
+            &__text {
+                text-align: left;
+                .img {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    #rules {
+        .title {
+            margin-top: 42px;
+        }
+    }
+    #referenciador {
+        .referenciado {
+            &__title h3 {
+                font-size: 16px;
+            }
+        }
+        // referidos new
+        .row {
+            margin-bottom: 0;
+        }
+        .user {
+            h5 {
+                left: 60px;
+            }
+            &__face {
+                width: 49px;
+                height: 49px;
+                font-size: 21px;
+            }
+            &__employe {
+                top:5px;
+            }
+            &__name {
+                top: 25px;
+            }
+        }
+        .form {
+            &-container {
+                box-shadow: inherit;
+                border-radius: inherit;
+                border-bottom: 1px solid #dedede;
+                padding: 12px 10px;
+            }
+            &-title {
+                font-size: 13px;
+                color: #84bd00;
+                i{
+                    color: #84bd00;
+                    margin-right: 5px;
+                }
+                .active{
+                    transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    transition: all .3s;
+                    -o-transition: all .3s;
+                    -webkit-transition: all .3s;
+                    -moz-transition: all .3s;
+                }
+            }
+            
+        }
+        .referidos {
+            padding-left: 10px;
+            .list__title {
+                font-size: 18px;
+                margin: 12px 0 0;
+            }
+        }
+        .calltoaction {
+            margin: 17px 0;
+        }
+    }    
+}
+

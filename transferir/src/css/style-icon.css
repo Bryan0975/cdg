@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./../fonts/font-icon/icomoon.eot?nnde8r');
+  src:  url('./../fonts/font-icon/icomoon.eot?nnde8r#iefix') format('embedded-opentype'),
+    url('./../fonts/font-icon/icomoon.ttf?nnde8r') format('truetype'),
+    url('./../fonts/font-icon/icomoon.woff?nnde8r') format('woff'),
+    url('./../fonts/font-icon/icomoon.svg?nnde8r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\e906";
+}
+.icon-next:before {
+  content: "\e907";
+}
+.icon-check:before {
+  content: "\e90f";
+}
+.icon-salud .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.icon-salud .path2:before {
+  content: "\e901";
+  margin-left: -0.83203125em;
+  color: rgb(255, 255, 255);
+}
+.icon-salud .path3:before {
+  content: "\e902";
+  margin-left: -0.83203125em;
+  color: rgb(0, 0, 0);
+}
+.icon-carrito:before {
+  content: "\e903";
+}
+.icon-domi:before {
+  content: "\e904";
+}
+.icon-vida:before {
+  content: "\e905";
+}
+.icon-time:before {
+  content: "\e979";
+}
